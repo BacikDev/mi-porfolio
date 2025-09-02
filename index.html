@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <title>Alexis Bacik</title>
 </head>
 <body>
@@ -14,10 +14,8 @@
                 Alexis Bacik
             </h2>
             <div class="search-bar">
-                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 101 101" id="search">
-                <path d="M63.3 59.9c3.8-4.6 6.2-10.5 6.2-17 0-14.6-11.9-26.5-26.5-26.5S16.5 28.3 16.5 42.9 28.4 69.4 43 69.4c6.4 0 12.4-2.3 17-6.2l20.6 20.6c.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7.9-.9.9-2.5 0-3.4L63.3 59.9zm-20.4 4.7c-12 0-21.7-9.7-21.7-21.7s9.7-21.7 21.7-21.7 21.7 9.7 21.7 21.7-9.7 21.7-21.7 21.7z"></path>
-                </svg>
-                <input type="search" placeholder="Busca...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Buscar...">
             </div>
             <div class="create">
                 <label class="btn btn-primary" for="create-post">Create</label>
@@ -27,6 +25,114 @@
             </div>
         </div>
     </nav>
+
+    <!-- ================== MAIN ================== -->
+     <main>
+        <div class="container">
+            <!-- ================= COLUMNA DE LA IZQUIERDA ================= -->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="./assets/img/profile-1.jpg" alt="Foto de perfil">
+                    </div>
+                    <div class="handle">
+                        <h4>Alexis Bacik</h4>
+                        <p class="text-muted">
+                            @bacikdev
+                        </p>
+                    </div>
+                </a>
+
+                <!-- =============== BARRA DE MENU LATERAL IZQUIERDA =========================== -->
+                 <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="fa-solid fa-house"></i></span>     <h3>Inicio</h3>
+                    </a>
+                    <a class="menu-item">
+                         <span><i class="fa-solid fa-user"></i></span>     <h3>Sobre mí</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="fa-solid fa-laptop-code"><small class="notification-count">9+</small></i></span>
+                        <h3>Proyectos</h3>
+                        <!-- ================ DESPLEGABLE CON PROYECTOS================== -->
+                         <div class="notifications-popup">
+                            <!-- ============ PROYECTO 1=========== -->
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/img/profile-2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Calculadora</b> Calcula calculos matemáticos
+                                    <small class="text-muted">REALIZADO CON: HTML - CSS - JS</small>
+                                </div>
+                            </div>
+
+                              <!-- ============ PROYECTO 1 =========== -->
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/img/profile-2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Calculadora</b> Calcula calculos matemáticos
+                                    <small class="text-muted">REALIZADO CON: HTML - CSS - JS</small>
+                                </div>
+                            </div>
+
+                              <!-- ============ PROYECTO 2 =========== -->
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/img/profile-2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Calculadora</b> Calcula calculos matemáticos
+                                    <small class="text-muted">REALIZADO CON: HTML - CSS - JS</small>
+                                </div>
+                            </div>
+
+                              <!-- ============ PROYECTO 3 =========== -->
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/img/profile-2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Calculadora</b> Calcula calculos matemáticos
+                                    <small class="text-muted">REALIZADO CON: HTML - CSS - JS</small>
+                                </div>
+                            </div>
+                         </div>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-code"></i></span>     <h3>Tecnologías</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-brands fa-github"></i></span>     <h3>Github</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-brands fa-linkedin"></i></span>     <h3>LinkedIn</h3>
+                    </a>
+                    <a class="menu-item" id="messages-notifications">
+                        <span><i class="fa-solid fa-envelope"><small class="notification-count">6</small></i></span>     <h3>Contacto</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-gear"></i></span>     <h3>Configuración</h3>
+                    </a>
+                 </div>
+
+                 <!-- =================== BOTÓN DE CONTACTO =================== -->
+                  <label for="create-post" class="btn btn-primary">Create Post</label>
+            </div>
+
+            <!-- ================= COLUMNA DEL MEDIO ================= -->
+             <div class="middle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure deserunt minima sit, necessitatibus dicta sequi sed dolorem quidem sint recusandae aliquam minus magni fuga corrupti eaque nobis similique possimus in?
+             </div>
+
+            <!-- ================= COLUMNA DE LA DERECHA ================= -->
+             <div class="right">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab eveniet corrupti distinctio minima. Minima repellendus, adipisci voluptatibus dolores sint accusamus autem similique in quibusdam nam neque consectetur error quis!
+             </div>
+        </div>
+    </main>
     <script src="./main.js"></script>
 </body>
 </html>
